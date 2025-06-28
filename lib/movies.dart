@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'core/app_routes.dart';
 import 'core/app_theme.dart';
 
 class Movies extends StatelessWidget {
