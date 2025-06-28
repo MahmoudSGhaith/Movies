@@ -17,6 +17,8 @@ class Movies extends StatelessWidget {
         return MaterialApp(
           theme: AppTheme.darkTheme,
           debugShowCheckedModeBanner: false,
+          routes: AppRoutes.routes,
+          initialRoute: AppRoutes.onBoarding1,
         );
       },
     );
