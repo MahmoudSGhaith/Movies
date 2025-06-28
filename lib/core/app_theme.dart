@@ -30,7 +30,7 @@ class AppTheme {
           borderRadius: BorderRadius.circular(25.r),
         ),
         fillColor: ColorsManger.white,
-        labelStyle: AppStyles.white20mediumOpacity60,
+        labelStyle: AppStyles.white16mediumOpacity60,
         errorStyle: AppStyles.red16medium,
         hintStyle: AppStyles.white16medium,
         filled: true,

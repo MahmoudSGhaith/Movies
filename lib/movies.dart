@@ -1,23 +1,40 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:movies/provider/language_provider.dart';
+import 'package:provider/provider.dart';
 
+import 'core/app_routes.dart';
 import 'core/app_theme.dart';
+import 'l10n/app_localizations.dart';
 
 class Movies extends StatelessWidget {
   const Movies({super.key});
 
   @override
   Widget build(BuildContext context) {
+    var provider = Provider.of<LanguageProvider>(context);
     return ScreenUtilInit(
       designSize: const Size(430, 932),
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return MaterialApp(
-          theme: AppTheme.darkTheme,
-          debugShowCheckedModeBanner: false,
-          routes: AppRoutes.routes,
-          initialRoute: AppRoutes.onBoarding1,
+        return ChangeNotifierProvider(
+          create: (context) => LanguageProvider(),
+          builder: (context, child) {
+            return MaterialApp(
+              debugShowCheckedModeBanner: false,
+              theme: AppTheme.darkTheme,
+              routes: AppRoutes.routes,
+              initialRoute: AppRoutes.onBoarding1,
+              localizationsDelegates: AppLocalizations.localizationsDelegates,
+              supportedLocales: [
+                Locale('en'),
+                Locale('ar'),
+              ],
+              locale: Locale(provider.currentLanguage),
+            );
+          },
         );
       },
     );
