@@ -12,6 +12,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
 
 
   cupertino_icons: ^1.0.8
@@ -20,6 +23,9 @@ dependencies:
   flutter_screenutil: ^5.9.3
   flutter_native_splash: ^2.4.6
   flutter_launcher_icons: ^0.14.4
+  provider: ^6.1.5
+  page_transition: ^2.2.1
+
 
 dev_dependencies:
   flutter_test:
@@ -34,6 +40,7 @@ flutter_launcher_icons:
 
 
 flutter:
+  generate: true
 
 
   uses-material-design: true

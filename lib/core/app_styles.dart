@@ -6,16 +6,16 @@ import 'package:google_fonts/google_fonts.dart';
 import 'colors_manger.dart';
 
 class AppStyles {
-  static TextStyle white36medium = GoogleFonts.roboto(
+  static TextStyle white30medium = GoogleFonts.roboto(
       fontWeight: FontWeight.w600,
       color: ColorsManger.white,
-      fontSize: 36
+      fontSize: 30
   );
 
-  static TextStyle white20mediumOpacity60 = GoogleFonts.roboto(
+  static TextStyle white16mediumOpacity60 = GoogleFonts.roboto(
       fontWeight: FontWeight.w600,
       color: ColorsManger.white60,
-      fontSize: 20
+      fontSize: 16
   );
 
   static TextStyle white20medium = GoogleFonts.roboto(
@@ -39,7 +39,8 @@ class AppStyles {
   static TextStyle white24bold = GoogleFonts.roboto(
       fontWeight: FontWeight.bold,
       color: ColorsManger.white,
-      fontSize: 24
+      fontSize: 24,
+    decoration: TextDecoration.none,
   );
 
   static TextStyle white20bold = GoogleFonts.roboto(
@@ -51,7 +52,8 @@ class AppStyles {
   static TextStyle white16bold = GoogleFonts.roboto(
       fontWeight: FontWeight.bold,
       color: ColorsManger.white,
-      fontSize: 16
+      fontSize: 16,
+    decoration: TextDecoration.none,
   );
 
   static TextStyle white16medium = GoogleFonts.roboto(
