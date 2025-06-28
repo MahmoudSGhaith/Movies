@@ -1,0 +1,87 @@
+
+import 'dart:ui';
+
+import 'package:flutter/src/painting/text_style.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'colors_manger.dart';
+
+class AppStyles {
+  static TextStyle white36medium = GoogleFonts.roboto(
+      fontWeight: FontWeight.w600,
+      color: ColorsManger.white,
+      fontSize: 36
+  );
+
+  static TextStyle white20mediumOpacity60 = GoogleFonts.roboto(
+      fontWeight: FontWeight.w600,
+      color: ColorsManger.white60,
+      fontSize: 20
+  );
+
+  static TextStyle white20medium = GoogleFonts.roboto(
+      fontWeight: FontWeight.w600,
+      color: ColorsManger.white,
+      fontSize: 20
+  );
+
+  static TextStyle black20Bold = GoogleFonts.roboto(
+      fontWeight: FontWeight.bold,
+      color: ColorsManger.black,
+      fontSize: 20
+  );
+
+  static TextStyle yellow20bold = GoogleFonts.roboto(
+      fontWeight: FontWeight.bold,
+      color: ColorsManger.yellow,
+      fontSize: 20
+  );
+
+  static TextStyle white24bold = GoogleFonts.roboto(
+      fontWeight: FontWeight.bold,
+      color: ColorsManger.white,
+      fontSize: 24
+  );
+
+  static TextStyle white20bold = GoogleFonts.roboto(
+      fontWeight: FontWeight.bold,
+      color: ColorsManger.white,
+      fontSize: 20
+  );
+
+  static TextStyle white16bold = GoogleFonts.roboto(
+      fontWeight: FontWeight.bold,
+      color: ColorsManger.white,
+      fontSize: 16
+  );
+
+  static TextStyle white16medium = GoogleFonts.roboto(
+      fontWeight: FontWeight.w600,
+      color: ColorsManger.white,
+      fontSize: 16
+  );
+
+  static TextStyle yellow16medium = GoogleFonts.roboto(
+      fontWeight: FontWeight.w600,
+      color: ColorsManger.yellow,
+      fontSize: 16
+  );
+
+  static TextStyle yellow20medium = GoogleFonts.roboto(
+      fontWeight: FontWeight.w500,
+      color: ColorsManger.yellow,
+      fontSize: 20
+  );
+
+  static TextStyle black20bold = GoogleFonts.roboto(
+      fontWeight: FontWeight.bold,
+      color: ColorsManger.black,
+      fontSize: 20
+  );
+
+  static TextStyle red16medium = GoogleFonts.poppins(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: ColorsManger.red,
+  );
+
+}
