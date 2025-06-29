@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:movies/common_widgets/cupertino_button/custom_cupertino_button.dart';
-import 'package:movies/common_widgets/custom_text_form_field/custom_text_form_field.dart';
 import 'package:movies/core/app_validator.dart';
 import 'package:movies/core/assets_manger.dart';
 import 'package:movies/core/app_routes.dart';
 import 'package:movies/core/app_styles.dart';
 import 'package:movies/core/colors_manger.dart';
+import 'package:movies/core/common_widgets/change_app_language/change_app_language.dart';
+import 'package:movies/core/common_widgets/cupertino_button/custom_cupertino_button.dart';
+import 'package:movies/core/common_widgets/custom_text_form_field/custom_text_form_field.dart';
 import 'package:movies/l10n/app_localizations.dart';
-
-import '../../common_widgets/change_app_language/change_app_language.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

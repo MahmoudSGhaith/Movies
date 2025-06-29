@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:movies/common_widgets/cupertino_button/custom_cupertino_button.dart';
+import 'package:movies/core/common_widgets/cupertino_button/custom_cupertino_button.dart';
 import 'package:movies/onBoarding/onBoarding3.dart';
 import 'package:page_transition/page_transition.dart';
 import '../core/assets_manger.dart';

@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:movies/core/common_widgets/cupertino_button/custom_cupertino_button.dart';
 import 'package:movies/onBoarding/onBoarding5.dart';
 import 'package:page_transition/page_transition.dart';
-import '../common_widgets/cupertino_button/custom_cupertino_button.dart';
 import '../core/assets_manger.dart';
 import '../core/app_styles.dart';
 import '../core/colors_manger.dart';

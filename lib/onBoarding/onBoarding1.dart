@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:movies/common_widgets/cupertino_button/custom_cupertino_button.dart';
 import 'package:movies/core/assets_manger.dart';
 import 'package:movies/core/app_routes.dart';
 import 'package:movies/core/app_styles.dart';
 import 'package:movies/core/colors_manger.dart';
+import 'package:movies/core/common_widgets/cupertino_button/custom_cupertino_button.dart';
 import 'package:movies/l10n/app_localizations.dart';
 import 'package:page_transition/page_transition.dart';
 

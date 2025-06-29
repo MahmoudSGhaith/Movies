@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movies/core/assets_manger.dart';
 import 'package:movies/core/app_styles.dart';
+import 'package:movies/core/colors_manger.dart';
 import 'package:movies/l10n/app_localizations.dart';
 import 'package:movies/provider/language_provider.dart';
 import 'package:provider/provider.dart';
-import '../../core/colors_manger.dart';
 
 class ChangeAppLanguage extends StatelessWidget {
 

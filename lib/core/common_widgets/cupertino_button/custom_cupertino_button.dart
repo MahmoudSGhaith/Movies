@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:movies/core/app_styles.dart';
 import 'package:movies/core/colors_manger.dart';
 
-import '../../core/app_styles.dart';
 
 class CustomCupertinoButton extends StatelessWidget {
   final String text;
