@@ -1,12 +1,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:movies/authentication/login_screen/login_screen.dart';
 import 'package:movies/onBoarding/onBoarding5.dart';
 import 'package:page_transition/page_transition.dart';
-
-import '../common_widgets/cupertino_button/Next_custom_cupertino_button.dart';
-import '../common_widgets/cupertino_button/back_custom_cupertino_button.dart';
-import '../core/app_assets.dart';
+import '../common_widgets/cupertino_button/custom_cupertino_button.dart';
+import '../core/assets_manger.dart';
 import '../core/app_styles.dart';
 import '../core/colors_manger.dart';
 import 'onBoarding3.dart';
@@ -33,7 +32,7 @@ class Onboarding6 extends StatelessWidget {
         child: Stack(
           children: [
             Image(
-              image: AssetImage(AppAssets.onBoarding6),
+              image: AssetImage(AssetsManger.onBoarding6),
               width: double.infinity,
               height: double.infinity,
               fit: BoxFit.fill,
@@ -62,10 +61,10 @@ class Onboarding6 extends StatelessWidget {
                       Text("Start Watching Now", style: AppStyles.white24bold),
                       Container(
                         width: double.infinity,
-                        child: NextCustomCupertinoButton(
-                          borderColor: ColorsManger.transparentColor,
-                          text: "Finish",
+                        child: CustomCupertinoButton(
+                          borderColor: ColorsManger.yellow,
                           backgroundColor: ColorsManger.yellow,
+                          text: "Finish",
                           onPress: () {
                             Next(context);
                           },
@@ -73,10 +72,10 @@ class Onboarding6 extends StatelessWidget {
                       ),
                       Container(
                         width: double.infinity,
-                        child: BackCustomCupertinoButton(
+                        child: CustomCupertinoButton(
                           borderColor: ColorsManger.yellow,
-                          text: "Back",
                           backgroundColor: ColorsManger.black,
+                          text: "Back",
                           onPress: () {
                             Back(context);
                           },
@@ -98,7 +97,7 @@ class Onboarding6 extends StatelessWidget {
       PageTransition(
         type: PageTransitionType.bottomToTopPop,
         childCurrent: this,
-        child:  Onboarding6(),
+        child:  LoginScreen(),
         duration: Duration(milliseconds: 500),
       ),
     );

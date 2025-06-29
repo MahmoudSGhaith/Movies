@@ -2,11 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:page_transition/page_transition.dart';
-
-import '../common_widgets/cupertino_button/Next_custom_cupertino_button.dart';
-import '../common_widgets/cupertino_button/back_custom_cupertino_button.dart';
-import '../core/app_assets.dart';
-import '../core/app_routes.dart';
+import '../common_widgets/cupertino_button/custom_cupertino_button.dart';
+import '../core/assets_manger.dart';
 import '../core/app_styles.dart';
 import '../core/colors_manger.dart';
 import 'onBoarding2.dart';
@@ -32,7 +29,7 @@ class Onboarding3 extends StatelessWidget {
         child: Stack(
           children: [
             Image(
-              image: AssetImage(AppAssets.onBoarding3),
+              image: AssetImage(AssetsManger.onBoarding3),
               width: double.infinity,
               height: double.infinity,
               fit: BoxFit.fill,
@@ -73,10 +70,10 @@ class Onboarding3 extends StatelessWidget {
                       ),
                       Container(
                         width: double.infinity,
-                        child: NextCustomCupertinoButton(
-                          borderColor: ColorsManger.transparentColor,
-                          text: "Next",
+                        child: CustomCupertinoButton(
                           backgroundColor: ColorsManger.yellow,
+                          borderColor: ColorsManger.yellow,
+                          text: "Next",
                           onPress: () {
                             Next(context);
                           },
@@ -84,10 +81,10 @@ class Onboarding3 extends StatelessWidget {
                       ),
                       Container(
                         width: double.infinity,
-                        child: BackCustomCupertinoButton(
+                        child: CustomCupertinoButton(
                           borderColor: ColorsManger.yellow,
-                          text: "Back",
                           backgroundColor: ColorsManger.black,
+                          text: "Back",
                           onPress: () {
                             Back(context);
                           },

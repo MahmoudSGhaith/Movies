@@ -194,4 +194,34 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get movieDetails => 'Movie Details';
+
+  @override
+  String get createAccount => 'Create Account';
+
+  @override
+  String get or => 'Or';
+
+  @override
+  String get loginWithGoogle => 'Login With Google';
+
+  @override
+  String get rePassword => 'RePassword';
+
+  @override
+  String get phoneNumber => 'Phone Number';
+
+  @override
+  String get verifyEmail => 'Verify Email';
+
+  @override
+  String get pickAvatar => 'Pick Avatar';
+
+  @override
+  String get resetPassword => 'Reset Password';
+
+  @override
+  String get deleteAccount => 'Delete Account';
+
+  @override
+  String get updateData => 'Update Data';
 }

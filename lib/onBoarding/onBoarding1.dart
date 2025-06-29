@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:movies/common_widgets/cupertino_button/Next_custom_cupertino_button.dart';
-import 'package:movies/core/app_assets.dart';
+import 'package:movies/common_widgets/cupertino_button/custom_cupertino_button.dart';
+import 'package:movies/core/assets_manger.dart';
 import 'package:movies/core/app_routes.dart';
 import 'package:movies/core/app_styles.dart';
 import 'package:movies/core/colors_manger.dart';
@@ -33,7 +33,7 @@ class Onboarding1 extends StatelessWidget {
           child: Stack(
             children: [
               Image(
-                image: AssetImage(AppAssets.onBoarding1),
+                image: AssetImage(AssetsManger.onBoarding1),
                 fit: BoxFit.cover,
                 width: double.infinity,
                 height: double.infinity,
@@ -64,10 +64,10 @@ class Onboarding1 extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 15.h,),
-                    NextCustomCupertinoButton(
+                    CustomCupertinoButton(
                       borderColor: ColorsManger.yellow,
-                      text: "Explore Now",
                       backgroundColor: ColorsManger.yellow,
+                      text: "Explore Now",
                       onPress: () {
                         Next(context);
                       },

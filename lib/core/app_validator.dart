@@ -28,9 +28,9 @@ class AppValidator {
   }
 
   static String? validateConfirmPassword(
-      String? password,
-      String? confirmPassword,
-      ) {
+    String? password,
+    String? confirmPassword,
+  ) {
     if (password == null || password.isEmpty) {
       return "this field is required";
     } else if (password != confirmPassword) {
@@ -40,13 +40,13 @@ class AppValidator {
     }
   }
 
-  static String? validateUserName(String? userName){
+  static String? validateUserName(String? userName) {
     RegExp usernameRegEx = RegExp(r'^[a-zA-Z0-9_]{3,20}$');
-    if(userName == null || userName.isEmpty){
+    if (userName == null || userName.isEmpty) {
       return "this field is required";
-    }else if(!usernameRegEx.hasMatch(userName)){
+    } else if (!usernameRegEx.hasMatch(userName)) {
       return "please enter valid user name";
-    }else{
+    } else {
       return null;
     }
   }
@@ -63,14 +63,14 @@ class AppValidator {
     }
   }
 
-  static String? validatePhoneNumber(String? phoneNumber){
-    if(phoneNumber == null || phoneNumber.isEmpty){
+  static String? validatePhoneNumber(String? phoneNumber) {
+    if (phoneNumber == null || phoneNumber.isEmpty) {
       return " this filed is required";
-    }else if(int.tryParse(phoneNumber.trim()) == null){
+    } else if (int.tryParse(phoneNumber.trim()) == null) {
       return " please enter numbers only";
-    }else if(phoneNumber.length != 11 ){
+    } else if (phoneNumber.length != 11) {
       return "phone number must be 11 number";
-    }else{
+    } else {
       return null;
     }
   }

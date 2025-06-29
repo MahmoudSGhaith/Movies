@@ -30,6 +30,18 @@ class AppStyles {
       fontSize: 20
   );
 
+  static TextStyle black20medium = GoogleFonts.roboto(
+      fontWeight: FontWeight.w600,
+      color: ColorsManger.black,
+      fontSize: 20
+  );
+
+  static TextStyle black18medium = GoogleFonts.roboto(
+      fontWeight: FontWeight.w600,
+      color: ColorsManger.black,
+      fontSize: 18
+  );
+
   static TextStyle yellow20bold = GoogleFonts.roboto(
       fontWeight: FontWeight.bold,
       color: ColorsManger.yellow,
@@ -62,10 +74,22 @@ class AppStyles {
       fontSize: 16
   );
 
+  static TextStyle white14medium = GoogleFonts.roboto(
+      fontWeight: FontWeight.w600,
+      color: ColorsManger.white,
+      fontSize: 14
+  );
+
   static TextStyle yellow16medium = GoogleFonts.roboto(
       fontWeight: FontWeight.w600,
       color: ColorsManger.yellow,
       fontSize: 16
+  );
+
+  static TextStyle yellow14medium = GoogleFonts.roboto(
+      fontWeight: FontWeight.w600,
+      color: ColorsManger.yellow,
+      fontSize: 14
   );
 
   static TextStyle yellow20medium = GoogleFonts.roboto(
@@ -80,8 +104,8 @@ class AppStyles {
       fontSize: 20
   );
 
-  static TextStyle red16medium = GoogleFonts.poppins(
-    fontSize: 16,
+  static TextStyle red14medium = GoogleFonts.poppins(
+    fontSize: 14,
     fontWeight: FontWeight.w600,
     color: ColorsManger.red,
   );

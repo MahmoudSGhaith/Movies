@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:movies/common_widgets/cupertino_button/Next_custom_cupertino_button.dart';
+import 'package:movies/common_widgets/cupertino_button/custom_cupertino_button.dart';
 import 'package:movies/onBoarding/onBoarding3.dart';
 import 'package:page_transition/page_transition.dart';
-import '../core/app_assets.dart';
+import '../core/assets_manger.dart';
 import '../core/app_routes.dart';
 import '../core/app_styles.dart';
 import '../core/colors_manger.dart';
@@ -28,7 +28,7 @@ class Onboarding2 extends StatelessWidget {
         child: Stack(
           children: [
             Image(
-              image: AssetImage(AppAssets.onBoarding2),
+              image: AssetImage(AssetsManger.onBoarding2),
               width: double.infinity,
               height: double.infinity,
               fit: BoxFit.cover,
@@ -69,10 +69,10 @@ class Onboarding2 extends StatelessWidget {
                       ),
                       Container(
                         width: double.infinity,
-                        child: NextCustomCupertinoButton(
+                        child: CustomCupertinoButton(
+                          backgroundColor: ColorsManger.yellow,
                           borderColor: ColorsManger.yellow,
                           text: "Next",
-                          backgroundColor: ColorsManger.yellow,
                           onPress: () {
                             Next(context);
                           },
