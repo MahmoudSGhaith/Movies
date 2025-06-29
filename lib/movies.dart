@@ -32,7 +32,7 @@ class _MoviesState extends State<Movies> {
               theme: AppTheme.darkTheme,
               routes: AppRoutes.routes,
               //initialRoute: AppRoutes.onBoarding1,
-              initialRoute: AppRoutes.loginScreen,
+              initialRoute: AppRoutes.onBoarding1,
               localizationsDelegates: AppLocalizations.localizationsDelegates,
               supportedLocales: [
                 Locale('en'),
