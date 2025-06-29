@@ -60,6 +60,16 @@
   "yes": "نعم",
   "no": "لا",
   "areYouSure": "هل أنت متأكد؟",
-  "movieDetails": "تفاصيل الفيلم"
+  "movieDetails": "تفاصيل الفيلم",
+  "createAccount" : "إنشئ حساب ",
+  "or" : "أو",
+  "loginWithGoogle" : "التسجيل باستخدام جوجل",
+  "rePassword"  : "إعاده تعيين كلمه المرور",
+  "phoneNumber" : "رقم الهاتف",
+  "verifyEmail" : "التحقق من البريد الإلكتروني",
+  "pickAvatar" : "اختر الصورة الرمزية",
+  "resetPassword" : "إعاده تعيين كلمه المرور",
+  "deleteAccount" : "مسح الحساب",
+  "updateData" : "تحديث البيانات"
 }
 

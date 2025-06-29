@@ -1,5 +1,5 @@
 
-class AppAssets {
+class AssetsManger {
   static const String base = "assets/images";
   static const String android12DarkSplash = "$base/splash.png";
   static const String arabic = "$base/arabic.png";
@@ -35,4 +35,6 @@ class AppAssets {
   static const String love = "$base/love.png";
   static const String folder = "$base/folder.png";
   static const String watchList = "$base/watchList.png";
+  static const String mainLogo = "$base/splashLogo.png";
+  static const String google = "$base/google.png";
 }

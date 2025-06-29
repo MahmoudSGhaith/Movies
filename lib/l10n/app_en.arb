@@ -60,6 +60,15 @@
   "yes": "Yes",
   "no": "No",
   "areYouSure": "Are you sure?",
-  "movieDetails": "Movie Details"
-
+  "movieDetails": "Movie Details",
+  "createAccount" : "Create Account",
+  "or" : "Or",
+  "loginWithGoogle" : "Login With Google",
+  "rePassword"  : "RePassword",
+  "phoneNumber" : "Phone Number",
+  "verifyEmail" : "Verify Email",
+  "pickAvatar" : "Pick Avatar",
+  "resetPassword" : "Reset Password",
+  "deleteAccount" : "Delete Account",
+  "updateData" : "Update Data"
 }

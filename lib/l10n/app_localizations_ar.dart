@@ -193,4 +193,34 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get movieDetails => 'تفاصيل الفيلم';
+
+  @override
+  String get createAccount => 'إنشئ حساب ';
+
+  @override
+  String get or => 'أو';
+
+  @override
+  String get loginWithGoogle => 'التسجيل باستخدام جوجل';
+
+  @override
+  String get rePassword => 'إعاده تعيين كلمه المرور';
+
+  @override
+  String get phoneNumber => 'رقم الهاتف';
+
+  @override
+  String get verifyEmail => 'التحقق من البريد الإلكتروني';
+
+  @override
+  String get pickAvatar => 'اختر الصورة الرمزية';
+
+  @override
+  String get resetPassword => 'إعاده تعيين كلمه المرور';
+
+  @override
+  String get deleteAccount => 'مسح الحساب';
+
+  @override
+  String get updateData => 'تحديث البيانات';
 }

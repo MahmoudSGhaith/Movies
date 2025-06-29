@@ -469,6 +469,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Movie Details'**
   String get movieDetails;
+
+  /// No description provided for @createAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Create Account'**
+  String get createAccount;
+
+  /// No description provided for @or.
+  ///
+  /// In en, this message translates to:
+  /// **'Or'**
+  String get or;
+
+  /// No description provided for @loginWithGoogle.
+  ///
+  /// In en, this message translates to:
+  /// **'Login With Google'**
+  String get loginWithGoogle;
+
+  /// No description provided for @rePassword.
+  ///
+  /// In en, this message translates to:
+  /// **'RePassword'**
+  String get rePassword;
+
+  /// No description provided for @phoneNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone Number'**
+  String get phoneNumber;
+
+  /// No description provided for @verifyEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify Email'**
+  String get verifyEmail;
+
+  /// No description provided for @pickAvatar.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick Avatar'**
+  String get pickAvatar;
+
+  /// No description provided for @resetPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset Password'**
+  String get resetPassword;
+
+  /// No description provided for @deleteAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Account'**
+  String get deleteAccount;
+
+  /// No description provided for @updateData.
+  ///
+  /// In en, this message translates to:
+  /// **'Update Data'**
+  String get updateData;
 }
 
 class _AppLocalizationsDelegate
