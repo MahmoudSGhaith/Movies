@@ -55,7 +55,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
               );
-            } else if (state is LoginSuccessState) {
+            }
+            else if (state is LoginSuccessState) {
               Navigator.pop(context);
               showDialog(
                 context: context,
@@ -77,7 +78,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 //todo : remove onBoarding1 and replace it with home screen
                 Navigator.pushReplacementNamed(context, AppRoutes.onBoarding1);
               });
-            } else if (state is LoginErrorState) {
+            }
+            else if (state is LoginErrorState) {
               Navigator.pop(context);
               showDialog(
                 context: context,
