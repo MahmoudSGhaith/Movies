@@ -14,4 +14,21 @@ class AuthDataSourceImpl implements AuthDataSource {
       data: {"email": email, "password": password},
     );
   }
+
+  @override
+  Future<Response> signUp({
+    required String name,
+    required String email,
+    required String password,
+    required String phone,
+    required int avaterId,
+  }) {
+    return networkServices.dio.post("auth/register" , data: {
+      "name" : name ,
+      "email" : email ,
+      "password" : password ,
+      "phone" : phone ,
+      "avaterId" : avaterId ,
+    });
+  }
 }

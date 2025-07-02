@@ -1,3 +1,5 @@
+import 'package:carousel_slider/carousel_options.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movies/core/app_validator.dart';
@@ -46,20 +48,29 @@ class _RegiesterScreenState extends State<RegiesterScreen> {
               children: [
               SizedBox(height: 10.h),
           SizedBox(
-            height: 0.175.sh,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: const [
-                CustomCarouselSlider(imagePath: AssetsManger.player1),
-                CustomCarouselSlider(imagePath: AssetsManger.player2),
-                CustomCarouselSlider(imagePath: AssetsManger.player3),
-                CustomCarouselSlider(imagePath: AssetsManger.player4),
-                CustomCarouselSlider(imagePath: AssetsManger.player5),
-                CustomCarouselSlider(imagePath: AssetsManger.player6),
-                CustomCarouselSlider(imagePath: AssetsManger.player7),
-                CustomCarouselSlider(imagePath: AssetsManger.player8),
-                CustomCarouselSlider(imagePath: AssetsManger.player9),
-              ],
+            height: 150.h,
+            child: Container(
+              alignment: Alignment.center,
+              width: 380.w,
+              height: 180.h,
+              child: CarouselSlider(
+                items: const [
+                 CustomCarouselSlider(imagePath: AssetsManger.player1),
+                 CustomCarouselSlider(imagePath: AssetsManger.player2),
+                 CustomCarouselSlider(imagePath: AssetsManger.player3),
+                 CustomCarouselSlider(imagePath: AssetsManger.player4),
+                 CustomCarouselSlider(imagePath: AssetsManger.player5),
+                 CustomCarouselSlider(imagePath: AssetsManger.player6),
+                 CustomCarouselSlider(imagePath: AssetsManger.player7),
+                 CustomCarouselSlider(imagePath: AssetsManger.player8),
+                 CustomCarouselSlider(imagePath: AssetsManger.player9),
+                ],
+                options: CarouselOptions(
+                  height: 135.h,
+                  enlargeCenterPage: true,
+                  viewportFraction: 0.35,
+                ),
+              ),
             ),
           ),
         SizedBox(height: 5.h),

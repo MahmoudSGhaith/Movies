@@ -1,9 +1,9 @@
-class LoginErrorHandler {
-  LoginErrorHandler({
+class ErrorHandler {
+  ErrorHandler({
       this.statusCode, 
       this.message,});
 
-  LoginErrorHandler.fromJson(dynamic json) {
+  ErrorHandler.fromJson(dynamic json) {
     statusCode = json['statusCode'];
     message = json['message'];
   }
