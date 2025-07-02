@@ -5,8 +5,8 @@ import 'package:movies/core/assets_manger.dart';
 import 'package:movies/core/common_widgets/cupertino_button/custom_cupertino_button.dart';
 import 'package:movies/core/common_widgets/custom_text_form_field/custom_text_form_field.dart';
 import 'package:movies/l10n/app_localizations.dart';
-import '../../core/app_routes.dart';
-import '../../core/colors_manger.dart';
+import '../../../../core/app_routes.dart';
+import '../../../../core/colors_manger.dart';
 
 class UpdateProfileScreen extends StatefulWidget {
   const UpdateProfileScreen({super.key});

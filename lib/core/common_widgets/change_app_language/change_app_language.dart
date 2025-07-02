@@ -9,10 +9,15 @@ import 'package:movies/l10n/app_localizations.dart';
 import 'package:movies/provider/language_provider.dart';
 import 'package:provider/provider.dart';
 
-class ChangeAppLanguage extends StatelessWidget {
+class ChangeAppLanguage extends StatefulWidget {
 
   const ChangeAppLanguage({super.key});
 
+  @override
+  State<ChangeAppLanguage> createState() => _ChangeAppLanguageState();
+}
+
+class _ChangeAppLanguageState extends State<ChangeAppLanguage> {
   @override
   Widget build(BuildContext context) {
     var configProvider = Provider.of<LanguageProvider>(context);

@@ -70,5 +70,7 @@
   "pickAvatar" : "Pick Avatar",
   "resetPassword" : "Reset Password",
   "deleteAccount" : "Delete Account",
-  "updateData" : "Update Data"
+  "updateData" : "Update Data",
+  "waiting" : "Please Wait",
+  "login_successfully" : "Login Successfully"
 }
