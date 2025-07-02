@@ -11,8 +11,8 @@ class CustomCarouselSlider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image(
       image: AssetImage(imagePath),
-      width: 0.4.sh,
-      height: 0.3.sh, // Bigger height
+      width: 120.w,
+      height: 120.w, // Bigger height
       fit: BoxFit.fill,
     );
   }
