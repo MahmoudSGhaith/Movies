@@ -44,6 +44,7 @@ class AuthRepositoriesImpl implements AuthRepositories {
     required String name,
     required String email,
     required String password,
+    required String confirmPassword,
     required String phone,
     required int avaterId,
   }) async {
@@ -52,6 +53,7 @@ class AuthRepositoriesImpl implements AuthRepositories {
         name: name,
         email: email,
         password: password,
+        confirmPassword: confirmPassword,
         phone: phone,
         avaterId: avaterId,
       );

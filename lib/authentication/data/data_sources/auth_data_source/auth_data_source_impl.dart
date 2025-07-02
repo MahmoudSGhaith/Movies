@@ -20,6 +20,7 @@ class AuthDataSourceImpl implements AuthDataSource {
     required String name,
     required String email,
     required String password,
+    required String confirmPassword,
     required String phone,
     required int avaterId,
   }) {
@@ -27,6 +28,7 @@ class AuthDataSourceImpl implements AuthDataSource {
       "name" : name ,
       "email" : email ,
       "password" : password ,
+      "confirmPassword" : confirmPassword,
       "phone" : phone ,
       "avaterId" : avaterId ,
     });

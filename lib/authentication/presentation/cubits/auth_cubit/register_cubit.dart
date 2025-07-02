@@ -23,6 +23,7 @@ class RegisterCubit extends Cubit<RegisterStates> {
         name: userNameController.text,
         email: emailController.text,
         password: passwordController.text,
+        confirmPassword: rePasswordController.text,
         phone: phoneNumberController.text,
         avaterId: avaterId,
       );
