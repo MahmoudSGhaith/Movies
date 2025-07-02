@@ -1,15 +1,15 @@
 
 import 'package:flutter/material.dart';
-import 'package:movies/authentication/forget_password_screen/forget_password_screen.dart';
-import 'package:movies/authentication/login_screen/login_screen.dart';
-import 'package:movies/authentication/regiester_screen/regiester_screen.dart';
-import 'package:movies/authentication/update_profile_screen/update_profile_screen.dart';
 import 'package:movies/onBoarding/onBoarding2.dart';
 import 'package:movies/onBoarding/onBoarding3.dart';
 import 'package:movies/onBoarding/onBoarding4.dart';
 import 'package:movies/onBoarding/onBoarding5.dart';
 import 'package:movies/onBoarding/onBoarding6.dart';
 
+import '../authentication/presentation/screens/forget_password_screen/forget_password_screen.dart';
+import '../authentication/presentation/screens/login_screen/login_screen.dart';
+import '../authentication/presentation/screens/regiester_screen/regiester_screen.dart';
+import '../authentication/presentation/screens/update_profile_screen/update_profile_screen.dart';
 import '../onBoarding/onBoarding1.dart';
 
 class AppRoutes {

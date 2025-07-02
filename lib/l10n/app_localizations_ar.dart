@@ -223,4 +223,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get updateData => 'تحديث البيانات';
+
+  @override
+  String get waiting => 'طول بالك يأخي';
+
+  @override
+  String get login_successfully => 'تم التسجيل بنجاح..الله عليك';
 }

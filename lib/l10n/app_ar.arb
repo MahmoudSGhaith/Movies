@@ -70,6 +70,8 @@
   "pickAvatar" : "اختر الصورة الرمزية",
   "resetPassword" : "إعاده تعيين كلمه المرور",
   "deleteAccount" : "مسح الحساب",
-  "updateData" : "تحديث البيانات"
+  "updateData" : "تحديث البيانات",
+  "waiting" : "طول بالك يأخي",
+  "login_successfully" : "تم التسجيل بنجاح..الله عليك"
 }
 

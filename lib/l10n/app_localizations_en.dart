@@ -224,4 +224,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get updateData => 'Update Data';
+
+  @override
+  String get waiting => 'Please Wait';
+
+  @override
+  String get login_successfully => 'Login Successfully';
 }
