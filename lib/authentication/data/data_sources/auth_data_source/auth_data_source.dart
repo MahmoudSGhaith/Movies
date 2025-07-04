@@ -11,4 +11,5 @@ abstract class AuthDataSource {
     required String phone,
     required int avaterId,
   });
+  Future<Response> resetPassword({required String oldPassword , required String newPassword});
 }

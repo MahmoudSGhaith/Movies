@@ -72,5 +72,9 @@
   "deleteAccount" : "Delete Account",
   "updateData" : "Update Data",
   "waiting" : "Please Wait",
-  "login_successfully" : "Login Successfully"
+  "login_successfully" : "Login Successfully",
+  "error" : "Incorrect email or password. Please try again.",
+  "reset_password" : "Reset Password",
+  "old_password" : "OldPassword",
+  "new_password" : "NewPassword"
 }

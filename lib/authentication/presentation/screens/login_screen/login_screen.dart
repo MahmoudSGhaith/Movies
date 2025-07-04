@@ -5,7 +5,7 @@ import 'package:lottie/lottie.dart';
 import 'package:movies/authentication/data/data_repositories/auth_repositories_impl.dart';
 import 'package:movies/authentication/data/data_sources/auth_data_source/auth_data_source_impl.dart';
 import 'package:movies/authentication/presentation/cubits/auth_cubit/login_cubit.dart';
-import 'package:movies/authentication/presentation/cubits/auth_state/login_state.dart';
+import 'package:movies/authentication/presentation/cubits/auth_state/login_states.dart';
 import 'package:movies/core/app_validator.dart';
 import 'package:movies/core/assets_manger.dart';
 import 'package:movies/core/app_routes.dart';
@@ -76,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
               );
               Future.delayed(const Duration(seconds: 2), () {
                 //todo : remove onBoarding1 and replace it with home screen
-                Navigator.pushReplacementNamed(context, AppRoutes.onBoarding1);
+                Navigator.pushReplacementNamed(context, AppRoutes.homeScreen);
               });
             }
             else if (state is LoginErrorState) {
@@ -89,9 +89,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Lottie.asset('assets/images/error.json', height: 200.h),
-                      Text(
-                        state.errorMessage ?? "",
-                        style: AppStyles.yellow16medium,
+                      const Text(
+                        "Email or Password is incorrect"
                       ),
                     ],
                   ),
@@ -155,7 +154,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   //todo : goto forget password screen
                                   Navigator.pushNamed(
                                     context,
-                                    AppRoutes.forgetPassword,
+                                    AppRoutes.resetPasswordScreen,
                                   );
                                 },
                                 child: Text(

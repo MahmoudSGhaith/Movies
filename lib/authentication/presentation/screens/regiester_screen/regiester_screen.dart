@@ -249,7 +249,11 @@ class _RegiesterScreenState extends State<RegiesterScreen> {
                             backgroundColor: ColorsManger.yellow,
                             borderColor: ColorsManger.yellow,
                             text: AppLocalizations.of(context)!.createAccount,
-                            onPress: cubit.signUp,
+                            onPress: () {
+                              if (formKey.currentState!.validate()) {
+                                cubit.signUp();
+                              }
+                            },
                           ),
                           SizedBox(height: 5.h),
                           // go to login screen

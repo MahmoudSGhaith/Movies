@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:movies/authentication/data/data_repositories/auth_repositories.dart';
-import 'package:movies/authentication/presentation/cubits/auth_state/login_state.dart';
+import 'package:movies/authentication/presentation/cubits/auth_state/login_states.dart';
 
 class LoginCubit extends Cubit<LoginState> {
   AuthRepositories authRepositories;

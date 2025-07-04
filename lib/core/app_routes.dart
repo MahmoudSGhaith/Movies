@@ -1,15 +1,17 @@
 
 import 'package:flutter/material.dart';
-import 'package:movies/authentication/presentation/screens/forget_password_screen/forget_password_screen.dart';
-import 'package:movies/authentication/presentation/screens/login_screen/login_screen.dart';
-import 'package:movies/authentication/presentation/screens/regiester_screen/regiester_screen.dart';
-import 'package:movies/authentication/presentation/screens/update_profile_screen/update_profile_screen.dart';
 import 'package:movies/onBoarding/onBoarding2.dart';
 import 'package:movies/onBoarding/onBoarding3.dart';
 import 'package:movies/onBoarding/onBoarding4.dart';
 import 'package:movies/onBoarding/onBoarding5.dart';
 import 'package:movies/onBoarding/onBoarding6.dart';
 
+import '../authentication/presentation/screens/forget_password_screen/forget_password_screen.dart';
+import '../authentication/presentation/screens/login_screen/login_screen.dart';
+import '../authentication/presentation/screens/regiester_screen/regiester_screen.dart';
+import '../authentication/presentation/screens/reset_password/reset_password.dart';
+import '../authentication/presentation/screens/update_profile_screen/update_profile_screen.dart';
+import '../main_layout/home/home.dart';
 import '../onBoarding/onBoarding1.dart';
 
 class AppRoutes {
@@ -23,6 +25,8 @@ class AppRoutes {
   static final String registerScreen = "/registerScreen";
   static final String forgetPassword = "/forgetPassword";
   static final String updateProfileScreen = "/updateProfileScreen";
+  static final String resetPasswordScreen = "/ResetPasswordScreen";
+  static final String homeScreen = "/homeScreen";
 
   static Map<String , WidgetBuilder> routes = {
     onBoarding1 : (context) => Onboarding1(),
@@ -35,5 +39,7 @@ class AppRoutes {
     registerScreen : (context) => RegiesterScreen(),
     forgetPassword : (context) => ForgetPasswordScreen(),
     updateProfileScreen : (context) => UpdateProfileScreen(),
+    resetPasswordScreen : (context) => ResetPasswordScreen(),
+    homeScreen : (context) => Home(genreIndex: 0,),
   };
 }

@@ -20,7 +20,7 @@ class AppValidator {
     );
     if (password == null || password.isEmpty) {
       return 'this field is required';
-    } else if (password.length < 8 || !passwordRegEx.hasMatch(password)) {
+    } else if (password.length < 8) {
       return "enter strong password please";
     } else {
       return null;
@@ -33,9 +33,11 @@ class AppValidator {
   ) {
     if (password == null || password.isEmpty) {
       return "this field is required";
-    } else if (password != confirmPassword) {
+    }
+    else if (password != confirmPassword) {
       return "please enter the same password";
-    } else {
+    }
+    else {
       return null;
     }
   }
@@ -68,8 +70,8 @@ class AppValidator {
       return " this filed is required";
     } else if (int.tryParse(phoneNumber.trim()) == null) {
       return " please enter numbers only";
-    } else if (phoneNumber.length != 11) {
-      return "phone number must be 11 number";
+    } else if (phoneNumber.length != 13) {
+      return "phone number must be 13 number";
     } else {
       return null;
     }

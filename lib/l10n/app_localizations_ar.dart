@@ -229,4 +229,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get login_successfully => 'تم التسجيل بنجاح..الله عليك';
+
+  @override
+  String get error => 'البريد الإلكتروني أو كلمة المرور غير صحيحة';
+
+  @override
+  String get reset_password => 'إعاده تعيين كلمه المرور';
+
+  @override
+  String get old_password => 'كلمه السر القديمه';
+
+  @override
+  String get new_password => 'كلمه السر الحديثه';
 }

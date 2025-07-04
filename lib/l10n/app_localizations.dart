@@ -541,6 +541,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Login Successfully'**
   String get login_successfully;
+
+  /// No description provided for @error.
+  ///
+  /// In en, this message translates to:
+  /// **'Incorrect email or password. Please try again.'**
+  String get error;
+
+  /// No description provided for @reset_password.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset Password'**
+  String get reset_password;
+
+  /// No description provided for @old_password.
+  ///
+  /// In en, this message translates to:
+  /// **'OldPassword'**
+  String get old_password;
+
+  /// No description provided for @new_password.
+  ///
+  /// In en, this message translates to:
+  /// **'NewPassword'**
+  String get new_password;
 }
 
 class _AppLocalizationsDelegate
