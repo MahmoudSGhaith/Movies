@@ -76,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
               );
               Future.delayed(const Duration(seconds: 2), () {
                 //todo : remove onBoarding1 and replace it with home screen
-                Navigator.pushReplacementNamed(context, AppRoutes.onBoarding1);
+                Navigator.pushReplacementNamed(context, AppRoutes.mainLayout);
               });
             }
             else if (state is LoginErrorState) {
