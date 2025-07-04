@@ -9,8 +9,7 @@ import 'core/app_theme.dart';
 import 'l10n/app_localizations.dart';
 
 class Movies extends StatefulWidget {
-  final String? token;
-  const Movies({super.key , this.token});
+  const Movies({super.key});
 
   @override
   State<Movies> createState() => _MoviesState();
@@ -32,10 +31,10 @@ class _MoviesState extends State<Movies> {
               debugShowCheckedModeBanner: false,
               theme: AppTheme.darkTheme,
               routes: AppRoutes.routes,
-              //todo : remove onBoarding1 and replace it with home screen
-              initialRoute: widget.token == null ?  AppRoutes.loginScreen : AppRoutes.onBoarding1,
+              //initialRoute: AppRoutes.onBoarding1,
+              initialRoute: AppRoutes.onBoarding1,
               localizationsDelegates: AppLocalizations.localizationsDelegates,
-              supportedLocales: const [
+              supportedLocales: [
                 Locale('en'),
                 Locale('ar'),
               ],
