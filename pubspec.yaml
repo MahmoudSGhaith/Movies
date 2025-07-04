@@ -27,11 +27,18 @@ dependencies:
   provider: ^6.1.5
   page_transition: ^2.2.1
   animated_toggle_switch: ^0.8.5
+  flutter_svg: ^2.2.0
+  http: ^1.4.0
+  injectable:
+  get_it:
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  injectable_generator:
+  build_runner:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
@@ -39,6 +46,7 @@ flutter_launcher_icons:
 
 
   flutter_lints: ^5.0.0
+
 
 
 flutter:

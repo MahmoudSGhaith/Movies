@@ -22,14 +22,6 @@ class AssetsManger {
   static const String player7 = "$base/player7.png";
   static const String player8 = "$base/player8.png";
   static const String player9 = "$base/player9.png";
-  static const String selectedExplore = "$base/selected_explore.png";
-  static const String unSelectedExplore = "$base/un_selected_explore.png";
-  static const String selectedHome = "$base/selected_home.png";
-  static const String unSelectedHome = "$base/un_selected_home.png";
-  static const String selectedProfile = "$base/selected_profile.png";
-  static const String unSelectedProfile = "$base/un_selected_profile.png";
-  static const String selectedSearch = "$base/selected_search.png";
-  static const String unSelectedSearch = "$base/un_selected_search.png";
   static const String star = "$base/star.png";
   static const String clock = "$base/clock.png";
   static const String love = "$base/love.png";
@@ -37,4 +29,19 @@ class AssetsManger {
   static const String watchList = "$base/watchList.png";
   static const String mainLogo = "$base/splashLogo.png";
   static const String google = "$base/google.png";
+  static const String availableNow = "$base/Available Now.png";
+  static const String watchNow = "$base/Watch Now.png";
+}
+
+
+class SvgIcons{
+  static const String base = "assets/images";
+  static const String selectedHome = "$base/selected_home.svg";
+  static const String unselectedHome = "$base/home.svg";
+  static const String selectedSearch = "$base/selected_search.svg";
+  static const String unselectedSearch = "$base/search.svg";
+  static const String selectedBrowse = "$base/selected_browse.svg";
+  static const String unselectedBrowse = "$base/browse.svg";
+  static const String selectedProfile = "$base/selected_profile.svg";
+  static const String unselectedProfile = "$base/profile.svg";
 }
