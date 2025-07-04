@@ -27,11 +27,22 @@ dependencies:
   provider: ^6.1.5
   page_transition: ^2.2.1
   animated_toggle_switch: ^0.8.5
+  injectable:
+  get_it:
+  http: ^1.4.0
+  dio: ^5.8.0+1
+  pretty_dio_logger: ^1.4.0
+  flutter_secure_storage: ^9.2.4
+  flutter_bloc: ^9.1.1
+  lottie: ^3.3.1
+  flutter_svg: ^2.2.0
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  injectable_generator:
+  build_runner:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
