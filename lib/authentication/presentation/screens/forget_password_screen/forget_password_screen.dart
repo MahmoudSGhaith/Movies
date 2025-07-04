@@ -23,12 +23,12 @@ class ForgetPasswordScreen extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 15.h),
         child: Column(
           children: [
-            Image(image: AssetImage(AssetsManger.forgetPassword)),
+            const Image(image: AssetImage(AssetsManger.forgetPassword)),
             SizedBox(height: 15.h,),
             CustomTextFormField(
               borderColor: ColorsManger.grey,
               filledColor: ColorsManger.grey,
-              prefixIcon: Icon(Icons.email, size: 30),
+              prefixIcon: const Icon(Icons.email, size: 30),
               textLabel: AppLocalizations.of(context)!.email,
               labelStyle: AppStyles.white16medium,
             ),

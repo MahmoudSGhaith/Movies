@@ -4,7 +4,8 @@ import 'package:movies/authentication/data/data_repositories/auth_repositories.d
 import 'package:movies/authentication/data/data_sources/auth_data_source/auth_data_source.dart';
 import 'package:movies/authentication/data/models/login/login_response_model/LoginResponse.dart';
 import 'package:movies/authentication/data/models/register/register_response_model/RegisterResponse.dart';
-import 'package:movies/authentication/error_handler/LoginErrorHandler.dart';
+import 'package:movies/authentication/data/models/reset_password/reset_password_response/ResetPasswordResponse.dart';
+import 'package:movies/authentication/error_handler/ErrorHandler.dart';
 
 class AuthRepositoriesImpl implements AuthRepositories {
   AuthDataSource authDataSource;
@@ -25,8 +26,7 @@ class AuthRepositoriesImpl implements AuthRepositories {
         LoginResponse data = LoginResponse.fromJson(loginResponse.data);
         await StorageService.saveToken(data.data!);
         return data;
-      }
-      else {
+      } else {
         var errorMessage = ErrorHandler.fromJson(loginResponse.data);
         throw errorMessage.message ?? "";
       }
@@ -39,6 +39,7 @@ class AuthRepositoriesImpl implements AuthRepositories {
       rethrow;
     }
   }
+
   @override
   Future<RegisterResponse> signUp({
     required String name,
@@ -74,4 +75,30 @@ class AuthRepositoriesImpl implements AuthRepositories {
     }
   }
 
+  @override
+  Future<ResetPasswordResponse> resetPassword({
+    required String oldPassword,
+    required String newPassword,
+  }) async {
+    try{
+      var resetPasswordResponse = await authDataSource.resetPassword(
+        oldPassword: oldPassword,
+        newPassword: newPassword,
+      );
+      if(resetPasswordResponse.statusCode == 200){
+        ResetPasswordResponse data = ResetPasswordResponse.fromJson(resetPasswordResponse.data);
+        return data;
+      }else{
+        var resetPasswordError = ErrorHandler.fromJson(resetPasswordResponse.data);
+        throw resetPasswordError.message ??"";
+      }
+    }on DioException catch (error) {
+      var errorMessage = ErrorHandler.fromJson(error.response?.data);
+      throw errorMessage.message ?? "Unexpected error";
+    } catch (error, s) {
+      print(error);
+      print(s);
+      rethrow;
+    }
+  }
 }

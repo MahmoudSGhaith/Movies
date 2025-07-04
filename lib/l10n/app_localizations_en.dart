@@ -230,4 +230,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get login_successfully => 'Login Successfully';
+
+  @override
+  String get error => 'Incorrect email or password. Please try again.';
+
+  @override
+  String get reset_password => 'Reset Password';
+
+  @override
+  String get old_password => 'OldPassword';
+
+  @override
+  String get new_password => 'NewPassword';
 }
