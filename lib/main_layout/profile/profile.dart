@@ -58,7 +58,7 @@ class Profile extends StatelessWidget {
                       flex: 2,
                       child: ElevatedButton(
                         onPressed: () {
-                          // Navigator.pushNamed(context, AppRoutes.editProfile);
+                          Navigator.pushNamed(context, AppRoutes.updateProfileScreen);
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: ColorsManger.yellow,

@@ -88,7 +88,7 @@ class _HomeState extends State<Home> {
                         padding: REdgeInsets.symmetric(horizontal: 16),
                         child: Column(
                           children: [
-                            Image.asset(AssetsManger.player1),
+                            Image.asset(AssetsManger.availableNow),
                             SizedBox(height: 20.h),
                             CarouselSlider(
                               options: CarouselOptions(
@@ -106,7 +106,7 @@ class _HomeState extends State<Home> {
                                   .map((movie) => MovieItem(movie: movie))
                                   .toList(),
                             ),
-                            Image.asset(AssetsManger.player2),
+                            Image.asset(AssetsManger.watchNow),
                             SizedBox(height: 20.h),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,

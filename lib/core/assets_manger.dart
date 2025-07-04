@@ -38,4 +38,18 @@ class AssetsManger {
   static const String mainLogo = "$base/splashLogo.png";
   static const String google = "$base/google.png";
   static const String resetPassword = "$base/resetPassword-.png";
+  static const String watchNow = "$base/Watch Now.png";
+  static const String availableNow = "$base/Available Now.png";
+}
+
+class SvgIcons{
+  static const String base = "assets/images";
+  static const String selectedHome = "$base/selected_home.svg";
+  static const String unselectedHome = "$base/home.svg";
+  static const String selectedSearch = "$base/selected_search.svg";
+  static const String unselectedSearch = "$base/search.svg";
+  static const String selectedBrowse = "$base/selected_browse.svg";
+  static const String unselectedBrowse = "$base/browse.svg";
+  static const String selectedProfile = "$base/selected_profile.svg";
+  static const String unselectedProfile = "$base/profile.svg";
 }

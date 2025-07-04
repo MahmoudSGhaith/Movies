@@ -48,24 +48,24 @@ class _MainLayoutState extends State<MainLayout> {
       },
       items: [
         BottomNavigationBarItem(
-          icon: SvgPicture.asset(AssetsManger.unSelectedHome),
-          activeIcon: SvgPicture.asset(AssetsManger.selectedHome),
-          label: ""
+            icon: SvgPicture.asset(SvgIcons.unselectedHome),
+            activeIcon: SvgPicture.asset(SvgIcons.selectedHome),
+            label: ""
         ),
         BottomNavigationBarItem(
-          icon: SvgPicture.asset(AssetsManger.unSelectedSearch),
-          activeIcon: SvgPicture.asset(AssetsManger.selectedSearch),
-          label: ""
+            icon: SvgPicture.asset(SvgIcons.unselectedSearch),
+            activeIcon: SvgPicture.asset(SvgIcons.selectedSearch),
+            label: ""
         ),
         BottomNavigationBarItem(
-          icon: SvgPicture.asset(AssetsManger.unSelectedSearch),
-          activeIcon: SvgPicture.asset(AssetsManger.selectedSearch),
-          label: ""
+            icon: SvgPicture.asset(SvgIcons.unselectedBrowse),
+            activeIcon: SvgPicture.asset(SvgIcons.selectedBrowse),
+            label: ""
         ),
         BottomNavigationBarItem(
-          icon: SvgPicture.asset(AssetsManger.unSelectedProfile),
-          activeIcon: SvgPicture.asset(AssetsManger.selectedProfile),
-          label: ""
+            icon: SvgPicture.asset(SvgIcons.unselectedProfile),
+            activeIcon: SvgPicture.asset(SvgIcons.selectedProfile),
+            label: ""
         ),
       ],
     );

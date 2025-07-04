@@ -5,7 +5,6 @@ import 'package:lottie/lottie.dart';
 import 'package:movies/authentication/data/data_repositories/auth_repositories_impl.dart';
 import 'package:movies/authentication/data/data_sources/auth_data_source/auth_data_source_impl.dart';
 import 'package:movies/authentication/presentation/cubits/auth_cubit/login_cubit.dart';
-import 'package:movies/authentication/presentation/cubits/auth_state/login_state.dart';
 import 'package:movies/core/app_validator.dart';
 import 'package:movies/core/assets_manger.dart';
 import 'package:movies/core/app_routes.dart';
@@ -16,6 +15,8 @@ import 'package:movies/core/common_widgets/cupertino_button/custom_cupertino_but
 import 'package:movies/core/common_widgets/custom_text_form_field/custom_text_form_field.dart';
 import 'package:movies/authentication/app_services/network_services.dart';
 import 'package:movies/l10n/app_localizations.dart';
+
+import '../../cubits/auth_state/login_states.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

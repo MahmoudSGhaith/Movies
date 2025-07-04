@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:movies/authentication/presentation/screens/forget_password_screen/forget_password_screen.dart';
 import 'package:movies/authentication/presentation/screens/login_screen/login_screen.dart';
 import 'package:movies/authentication/presentation/screens/regiester_screen/regiester_screen.dart';
+import 'package:movies/authentication/presentation/screens/reset_password/reset_password.dart';
 import 'package:movies/authentication/presentation/screens/update_profile_screen/update_profile_screen.dart';
 import 'package:movies/main_layout/main_layout.dart';
 import 'package:movies/onBoarding/onBoarding2.dart';
@@ -24,6 +25,7 @@ class AppRoutes {
   static final String registerScreen = "/registerScreen";
   static final String forgetPassword = "/forgetPassword";
   static final String updateProfileScreen = "/updateProfileScreen";
+  static final String resetPasswordScreen = "/resetPasswordScreen";
   static final String mainLayout = "/mainLayout";
 
   static Map<String , WidgetBuilder> routes = {
@@ -37,6 +39,7 @@ class AppRoutes {
     registerScreen : (context) => RegiesterScreen(),
     forgetPassword : (context) => ForgetPasswordScreen(),
     updateProfileScreen : (context) => UpdateProfileScreen(),
+    resetPasswordScreen : (context) => ResetPasswordScreen(),
     mainLayout: (context) => MainLayout()
   };
 }
