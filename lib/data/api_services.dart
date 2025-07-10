@@ -59,7 +59,7 @@ class ApiServices {
     }
   }
 
-  static Future<Result<Movie>> getMovieDetails(int id) async {
+   Future<Result<Movie>> getMovieDetails(int id) async {
     try {
       Uri url = Uri.https(_baseUrl, movieDetailsEndpoint, {
         "movie_id": id.toString(),
@@ -95,6 +95,30 @@ class ApiServices {
       MoviesResponse moviesResponse = MoviesResponse.fromJson(json);
       if (moviesResponse.status == "ok") {
         List<Movies>? movies = moviesResponse.data!.movies;
+        return Success(data: movies!);
+      } else {
+        return ServerError(
+          status: moviesResponse.status!,
+          statusMessage: moviesResponse.statusMessage!,
+        );
+      }
+    } on Exception catch (e) {
+      return GeneralException(exception: e);
+    }
+  }
+
+  Future<Result<List<Movies>>> search(String searchKey) async {
+    try {
+      Uri url = Uri.https(_baseUrl, movieListEndpoint, {
+        "query_term": searchKey,
+      });
+      var response = await http.get(url);
+      var json = jsonDecode(response.body);
+      MoviesResponse moviesResponse = MoviesResponse.fromJson(json);
+
+      if (moviesResponse.status == "ok" && moviesResponse.data!.movies != null) {
+        List<Movies>? movies = moviesResponse.data!.movies;
+
         return Success(data: movies!);
       } else {
         return ServerError(

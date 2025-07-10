@@ -16,6 +16,7 @@ class CustomTextFormField extends StatelessWidget {
   final IconButton? suffixIcon;
   final TextEditingController? controller;
   final String? Function(String?)? validator;
+  final void Function(String)? onChanged;
   final TextInputType? keyboardType;
   final bool? isObscureText;
   final bool? isPassword;
@@ -41,11 +42,13 @@ class CustomTextFormField extends StatelessWidget {
     this.textLabel,
     this.hintText,
     this.iconColor,
+    this.onChanged
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      onChanged: onChanged,
       obscureText: isObscureText ?? false,
       style: AppStyles.white16medium,
       controller: controller,
