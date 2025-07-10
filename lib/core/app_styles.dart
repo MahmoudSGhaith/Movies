@@ -117,4 +117,10 @@ class AppStyles {
     color: ColorsManger.red,
   );
 
+  static TextStyle grey20Bold = GoogleFonts.poppins(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+    color: ColorsManger.greyAD,
+  );
+
 }

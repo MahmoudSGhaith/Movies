@@ -21,6 +21,7 @@ class MoviesByGenreRepoImpl extends MoviesByGenreRepo {
           data: result.data
               .map(
                 (movie) => MovieEntity(
+                  id: movie.id!,
                   mediumImage: movie.mediumCoverImage,
                   rating: movie.rating!,
                   largeImage: movie.largeCoverImage
