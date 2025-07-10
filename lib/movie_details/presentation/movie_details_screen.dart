@@ -33,7 +33,7 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
     super.didChangeDependencies();
     movieId = ModalRoute.of(context)!.settings.arguments as int;
     print(movieId);
-    movieDetailsProvider = MovieDetailsProvider();
+    movieDetailsProvider = getIt<MovieDetailsProvider>();
     movieDetailsProvider.getMoviesDetails(movieId);
     moviesSuggestionProvider = getIt<MoviesSuggestionProvider>();
     moviesSuggestionProvider.getMovieSuggestions(movieId);
