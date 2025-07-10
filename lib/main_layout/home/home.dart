@@ -100,6 +100,7 @@ class _HomeState extends State<Home> {
                                     movieImageIndex = index;
                                   });
                                   print("index = $movieImageIndex");
+                                  print("id = ${state.movies[movieImageIndex].id}");
                                 },
                               ),
                               items: state.movies

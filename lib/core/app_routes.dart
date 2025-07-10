@@ -6,6 +6,7 @@ import 'package:movies/authentication/presentation/screens/regiester_screen/regi
 import 'package:movies/authentication/presentation/screens/reset_password/reset_password.dart';
 import 'package:movies/authentication/presentation/screens/update_profile_screen/update_profile_screen.dart';
 import 'package:movies/main_layout/main_layout.dart';
+import 'package:movies/movie_details/presentation/movie_details_screen.dart';
 import 'package:movies/onBoarding/onBoarding2.dart';
 import 'package:movies/onBoarding/onBoarding3.dart';
 import 'package:movies/onBoarding/onBoarding4.dart';
@@ -27,6 +28,7 @@ class AppRoutes {
   static final String updateProfileScreen = "/updateProfileScreen";
   static final String resetPasswordScreen = "/resetPasswordScreen";
   static final String mainLayout = "/mainLayout";
+  static final String movieDetails = "/movieDetails";
 
   static Map<String , WidgetBuilder> routes = {
     onBoarding1 : (context) => Onboarding1(),
@@ -40,6 +42,7 @@ class AppRoutes {
     forgetPassword : (context) => ForgetPasswordScreen(),
     updateProfileScreen : (context) => UpdateProfileScreen(),
     resetPasswordScreen : (context) => ResetPasswordScreen(),
-    mainLayout: (context) => MainLayout()
+    mainLayout: (context) => MainLayout(),
+    movieDetails:(context) => MovieDetailsScreen(),
   };
 }
